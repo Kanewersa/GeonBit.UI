@@ -1,5 +1,12 @@
 ![GeonBit.UI](assets/img/GeonBitUI-sm.png "GeonBit.UI")
 
+## Fork information
+This project was updated to .NET 5 and Monogame 3.8.0.1641.
+
+GeonBit.UI/Content directory contains already built (.xnb) content files for DesktopGL distribution.
+
+For original assets (non-built) visit [GeonBit.UI git](https://github.com/RonenNess/GeonBit.UI).
+
 # GeonBit.UI
 
 UI extension for MonoGame-based projects by Ronen Ness.
@@ -421,7 +428,7 @@ Note: Entities may behave unexpectedly and won't render correctly if set to a si
 When you define an entity size in percents, sometimes you want to limit the actual size in pixels.
 For example, you might want an entity to take 50% of its parent width, but never exceed 500 pixels. For that purpose, you can use the MaxSize property.
 
-Just like with Size property, MinSize / MaxSize can also be in percents. 
+Just like with Size property, MinSize / MaxSize can also be in percents.
 For example, you can define an entity to be 500 pixels, but use MinSize to make sure it always take at least 50% of its parent width.
 
 ### PriorityBonus
@@ -1904,7 +1911,7 @@ For older MonoGame versions, see [tag 2.1.0.0](https://github.com/RonenNess/Geon
 
 - Added outline opacity property.
 - Added some text validators.
-- Improved existing text validators efficiency + added support in spaces / no spaces. 
+- Improved existing text validators efficiency + added support in spaces / no spaces.
 - Added utility to generate message boxes.
 
 ### 3.0.1.4
@@ -1939,9 +1946,9 @@ For older MonoGame versions, see [tag 2.1.0.0](https://github.com/RonenNess/Geon
 - Fixed propagating events in lists and dropdown + added base function for that.
 - Changed so that selecting the same value in a dropdown would still close it.
 - Added msg boxes counter to msg boxes utility + a getter to check if there's anything opened.
-- Added extra margin property to allow better control on entities selection. 
+- Added extra margin property to allow better control on entities selection.
 - Fixed the annoying selection gap in lists and dropdown (clicking right between the lines).
-- Fixed disposing render targets properly + adding the IDisposable API to UserInterface and Panels. 
+- Fixed disposing render targets properly + adding the IDisposable API to UserInterface and Panels.
 
 ### 3.0.2.2
 
@@ -1961,7 +1968,7 @@ For older MonoGame versions, see [tag 2.1.0.0](https://github.com/RonenNess/Geon
 - Removed the 'input' param from all the internal functions.
 - Added support in transformation matrix.
 - Added support in drawing cursor outside rendering targets.
-- Fixed a bug that re-creates input managers for no reason whenever creating new UserInterface(). 
+- Fixed a bug that re-creates input managers for no reason whenever creating new UserInterface().
 
 ### 3.1.0.2
 
@@ -2092,4 +2099,3 @@ The following people contributed to the project via pull requests:
 #### Matt Swift
 
 - Memory optimizations.
-
